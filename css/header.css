@@ -1,0 +1,19 @@
+
+header {
+    background-color: #2d2b2b;
+    text-align: center;
+}
+
+header .row {
+    padding-top: 80px;
+    height: 100vh;  /* Приклад! Висота header завжди рівна висоті екрану пристрою */
+    justify-content: center;  /* Контейнери всередині header .row центруються по основній осі (горизонтально) */
+    align-items: center;  /* Контейнер всередині header .row центрується по поперечній осі (вертикально) */
+    
+}
+header .gif {
+    justify-content: center;
+    padding-top: 90px;
+    height: 5vh;  /* Приклад! Висота header завжди рівна висоті екрану пристрою */
+    align-content: flex-end;
+}

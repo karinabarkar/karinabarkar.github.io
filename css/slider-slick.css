@@ -1,0 +1,52 @@
+.slider-slick {
+    display: flex;
+    align-items:center;
+    min-height: 100vh;
+    background-color: #646464;
+    }
+
+.slider .item {
+    opacity: 0.7;
+/*    transform: scale(0.65); */
+    transition: all 200ms ease;  /* Плавні зміни усіх властивостей слайду */
+    padding: 0 9px;
+    }
+
+.item.slick-current {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'FontAwesome';  /* Використовуємо шрифт Awesome для кнопок управління слайдером */
+    font-size: 1.5rem;
+    line-height: 1;
+    opacity: .75;
+    color: #eee;
+}
+
+.slick-prev:before {
+    content: '\f053';  /* Код (Unicode) символа 'fa-chevron-left' (стрілка вліво) з шрифта Awesome */
+}
+
+.slick-next:before {
+    content: '\f054';  /* Код (Unicode) символа 'fa-chevron-right' (стрілка вправо) з шрифта Awesome */
+}
+
+.slick-dots li {
+    width: 19px;
+    height: 19px;
+    margin: 0 5px;
+}
+
+.slick-dots li button:before {
+font-size: 19px;
+}
+
+/* Для екранів шириною менше 767px */
+/* мінімальна висота слайдера      */
+/* рівну висоті viewport 100vh     */
+
+@media screen and (max-width:767px) {
+    
+}
